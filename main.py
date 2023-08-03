@@ -1,16 +1,39 @@
-# This is a sample Python script.
+# Incomplete app!
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+MENU_PROMPT = "\nEnter 'a' to add a movie, 'l' to see your movies, 'f' to find a movie by title, or 'q' to quit: "
+movies = []
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+# You may want to create a function for this code
+title = input("Enter the movie title: ")
+director = input("Enter the movie director: ")
+year = input("Enter the movie release year: ")
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+movies.append({
+    'title': title,
+    'director': director,
+    'year': year
+})
+
+
+# Create other functions for:
+#   - listing movies
+#   - finding movies
+
+
+# And another function here for the user menu
+selection = input(MENU_PROMPT)
+while selection != 'q':
+    if selection == "a":
+        pass
+    elif selection == "l":
+        pass
+    elif selection == "f":
+        pass
+    else:
+        print('Unknown command. Please try again.')
+
+    selection = input(MENU_PROMPT)
+
+
+# Remember to run the user menu function at the end!
